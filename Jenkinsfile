@@ -8,8 +8,9 @@ def getFtpPublishProfile(def publishProfilesJson) {
 }
 
 node {
-  withEnv(['AZURE_SUBSCRIPTION_ID=<subscription_id>',
-        'AZURE_TENANT_ID=<tenant_id>']) {
+  withEnv(['AZURE_SUBSCRIPTION_ID=f447af8c-eaaf-4526-a9c2-5f45d9cae932
+',
+        'AZURE_TENANT_ID=44e9f90f-8a4a-44a7-9dbc-8856049db4a3']) {
     stage('init') {
       checkout scm
     }
@@ -19,8 +20,8 @@ node {
     }
   
     stage('deploy') {
-      def resourceGroup = '<resource_group>'
-      def webAppName = '<app_name>'
+      def resourceGroup = 'toDoApp-Jenkins_group'
+      def webAppName = 'sampleApp-Wiktor'
       // login Azure
       withCredentials([usernamePassword(credentialsId: '<service_princial>', passwordVariable: 'AZURE_CLIENT_SECRET', usernameVariable: 'AZURE_CLIENT_ID')]) {
        sh '''
