@@ -23,7 +23,7 @@ node {
       def resourceGroup = 'toDoApp-Jenkins_group'
       def webAppName = 'sampleApp-Wiktor'
       // login Azure
-      withCredentials([usernamePassword(credentialsId: 'd099602b-d00b-4928-8fd4-3b2b0dc0519f', passwordVariable: 'd099602b-d00b-4928-8fd4-3b2b0dc0519f', usernameVariable: '2bd83e01-01b0-4e1b-8248-c4214196d8d8')]) {
+      withCredentials([usernamePassword(credentialsId: 'jenkins_credentials', passwordVariable: '2bd83e01-01b0-4e1b-8248-c4214196d8d8', usernameVariable: '2bd83e01-01b0-4e1b-8248-c4214196d8d8')]) {
        sh '''
           az login --service-principal -u $AZURE_CLIENT_ID -p $AZURE_CLIENT_SECRET -t $AZURE_TENANT_ID
           az account set -s $AZURE_SUBSCRIPTION_ID
