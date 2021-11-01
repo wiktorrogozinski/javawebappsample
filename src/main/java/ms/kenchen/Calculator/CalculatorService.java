@@ -13,7 +13,7 @@ public class CalculatorService {
     @Path("ping")
     @Produces(MediaType.TEXT_PLAIN)
     public String ping() {
-        return "Welcome to Wiktor Java Web App! This is updated v14 - Sicario commit + dsl!\n" + new Date().toString();
+        return "Welcome to Wiktor Java Web App! This is updated v15 - Sicario commit + dsl!\n" + new Date().toString();
     }
 
     @GET
