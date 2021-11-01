@@ -1,0 +1,18 @@
+pipelineJob('job-dsl-plugin') {
+  definition {
+    cpsScm {
+      scm {
+        git {
+          remote {
+            url('https://github.com/wiktorrogozinski/javawebappsample')
+          }
+          triggers {
+        scm('*/1 * * * *')
+         }
+          branch('*/master')
+        }
+      }
+      lightweight()
+    }
+  }
+}
