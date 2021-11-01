@@ -4,7 +4,7 @@ pipelineJob('job-dsl-plugin') {
       scm {
         git {
           remote {
-            url('https://github.com/wiktorrogozinski/javawebappsample/blob/master/job-dsl-file')
+            url('https://github.com/wiktorrogozinski/javawebappsample/blob/master/job-dsl-file.git')
           }
           branch('*/master')
         }
