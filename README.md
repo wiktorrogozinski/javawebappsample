@@ -9,4 +9,5 @@ Tools which I have used:<br><br>
 ![Jenkins_Job](https://user-images.githubusercontent.com/62955170/139862987-b27f9724-3d1c-4867-b700-2fdeda8dfe84.png)
 <br><br>
 <b>Azure Web app</b> - Jenkins is responsible for delivering the latest app code to Azure Web App. Azure Web App hosts the app and provides access to it.<br><br>
-![app](https://user-images.githubusercontent.com/62955170/139862912-86ffb6bb-9633-46d2-b6f3-cffaccb63636.png)
+
+![app](https://user-images.githubusercontent.com/62955170/139864291-503ca79d-a31d-49de-9501-f759aff853d6.png)
