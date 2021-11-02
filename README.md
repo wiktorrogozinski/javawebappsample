@@ -1,4 +1,4 @@
-![Screenshot](screenshots/app.png)
+![Screenshot](blob/master/screenshots/app.png)
 ![App](app.png)
 
 
